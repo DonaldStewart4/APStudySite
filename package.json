@@ -1,0 +1,18 @@
+{
+  "name": "ap-study-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered AP study site with adaptive lessons for every College Board unit and topic.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server.js",
+    "dev:mock": "MOCK_AI=1 node server.js",
+    "check": "node scripts/check-data.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0"
+  }
+}
